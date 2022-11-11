@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-Library</title>
     <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
 
@@ -20,13 +22,13 @@
             <form class="modal-content">
                 <div class="container">
                     <label for="book">Title of the book</label>
-                    <input type="text" placeholder="Book's title" name="user_book" id="book" required>
+                    <input autocomplete="off" type="text" placeholder="Book's title" name="user_book" id="book" required>
 
-                    <label for="author">Author of the Book:</label>
-				    <input type="text" placeholder="Book's author" name="book_author" id="author" required>
+                    <label for="author">Author of the Book</label>
+				    <input autocomplete="off" type="text" placeholder="Book's author" name="book_author" id="author" required>
 
-				    <label for="page">Pages:</label>
-				    <input type="number" placeholder="No. of Pages" name="book_page" id="page" required>
+				    <label for="page">Pages</label>
+				    <input autocomplete="off" type="number" placeholder="No. of Pages" name="book_page" id="page" required>
 
                     <input type="checkbox" id="status"><label for="status">Have you read the book?</label>
 
@@ -39,8 +41,17 @@
         </div>
         <div class="card-container">
         </div>
-        <button id="add-btn">Add</button>
+        <button id="add-btn"><i class="fa-solid fa-plus"></i></button>
     </main>
+
+    <footer>
+        <p>
+            &#169;Copyright 2022 Aayush
+            <a href="https://github.com/Aayush99910/Library-App" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </p>
+    </footer>
 
 </body>
 </html>
