@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <p>E-Library App</p>
+    </nav>
+
+    <main>
+        <div id="id01" class="modal">
+            <span class="close" id="cross" title="Close Modal">×</span>
+            <form class="modal-content">
+                <div class="container">
+                    <label for="book">Title of the book</label>
+                    <input type="text" placeholder="Book's title" name="user_book" id="book" required>
+
+                    <label for="author">Author of the Book:</label>
+				    <input type="text" placeholder="Book's author" name="book_author" id="author" required>
+
+				    <label for="page">Pages:</label>
+				    <input type="number" placeholder="No. of Pages" name="book_page" id="page" required>
+
+                    <input type="checkbox" id="status"><label for="status">Have you read the book?</label>
+
+                    <div class="button-container">
+                        <button type="button" id="cancel" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="add-book-btn">Add Book</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card-container">
+        </div>
+        <button id="add-btn">Add</button>
+    </main>
+
+</body>
+</html>
