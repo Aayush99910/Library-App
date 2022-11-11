@@ -8,9 +8,33 @@ body {
     min-height: 100vh;
 }
 
+@media (min-width: 0px) and (max-width: 599px) {
+    .cancelbtn,
+    .add-book-btn {
+        padding: 0.4rem 0.65rem;
+    }
+
+    .modal-content {
+        width: 80%;
+        height: 58%;
+    }
+}
+
+@media (min-width: 600px) {
+    .cancelbtn,
+    .add-book-btn {
+        padding: 1rem 1.5rem;
+    }
+
+    .modal-content {
+        width: 50%;
+        height: 60%;
+    }
+}
+
 nav {
     height: 80px;
-    background-color: #9579E8;
+    background-color: #d73818;
     display: flex;
     align-items: center;
     padding: 0 0 0 10px;
@@ -173,7 +197,6 @@ input[type=number]::placeholder {
 .cancelbtn,
 .add-book-btn {
     background-color: #46b846;
-    padding: 1rem 1.5rem;
     color: white;
     border: none;
     border-radius: 6px;
@@ -218,8 +241,6 @@ input[type=number]::placeholder {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     border-radius: 10px;
-    width: 40%;
-    height: 60%;
 }
 
 .close {
