@@ -2,14 +2,25 @@
 let myBooks = [];
 
 
-// constructor function which instatiates the books
-function Book (name, author, page, id, status) {
-    this.name = name;
-    this.author = author;
-    this.page = page;
-    this.id = id;
-    this.status = status;
+// class Book which intialises the Book  
+class Book {
+    constructor (name, author, page, id, status) {
+        this.name = name;
+        this.author = author;
+        this.page = page;
+        this.id = id;
+        this.status = status;
+    }
 }
+
+// constructor function which instatiates the books
+// function Book (name, author, page, id, status) {
+//     this.name = name;
+//     this.author = author;
+//     this.page = page;
+//     this.id = id;
+//     this.status = status;
+// }
 
 // function which adds the book to the array and also make the book
 function addBookToLibrary (bookName, author, page, id, status) {
